@@ -1,6 +1,35 @@
-# CyberQRG Rebuild
+# CyberQRG Web Suite
 
 A production-ready, enterprise-grade web suite for CyberQRG AI cybersecurity solutions. This monorepo contains three fully functional websites deployed to Cloudflare Pages with comprehensive security, routing, and operational systems.
+
+## 🚀 Quick Deploy to Cloudflare Pages
+
+### 1. Create Three Cloudflare Pages Projects
+Go to https://dash.cloudflare.com/pages and create 3 projects:
+
+**Web App (cyberqrgai.com):**
+- Connect to: `hochster71/cyberqrg-web-suite`
+- Build command: *(leave empty)*
+- Build output directory: `apps/web/public`
+
+**Sentinel App (sentinel.cyberqrgai.com):**
+- Connect to: `hochster71/cyberqrg-web-suite`
+- Build command: *(leave empty)*
+- Build output directory: `apps/sentinel/public`
+
+**Privacy App (privacy.cyberqrgai.com):**
+- Connect to: `hochster71/cyberqrg-web-suite`
+- Build command: *(leave empty)*
+- Build output directory: `apps/privacy/public`
+
+### 2. Enable Security (for each project)
+- SSL/TLS: Full (strict)
+- Always Use HTTPS: On
+- Auto Minify: HTML, CSS, JS
+- Brotli Compression: On
+
+### 3. Add Custom Domains
+Configure DNS to point your domains to Cloudflare Pages.
 
 ## ✨ Status: Production Ready
 
