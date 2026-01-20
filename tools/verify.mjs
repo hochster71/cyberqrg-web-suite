@@ -164,7 +164,7 @@ function checkDarkTheme(content, filePath) {
 // Check for external dependencies
 function checkExternalDeps(content, filePath) {
   const externalPatterns = [
-    /https?:\/\/(?!localhost|127\.0\.0\.1)/i,
+    /https?:\/\/(?!localhost|127\.0\.0\.1|cyberqrgai\.com|sentinel\.cyberqrgai\.com|privacy\.cyberqrgai\.com)/i,
     /cdn\./i,
     /googleapis\.com/i,
     /bootstrapcdn\.com/i,
