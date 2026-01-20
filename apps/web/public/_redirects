@@ -1,0 +1,39 @@
+# CyberQRG Web App Redirects
+# Cloudflare Pages _redirects file
+# Format: [from] [to] [status]
+
+# Trust center routes
+/trust /trust/index.html 200
+/trust/ /trust/index.html 200
+
+# Individual trust pages
+/terms /trust/terms.html 200
+/terms/ /trust/terms.html 200
+/privacy /trust/privacy.html 200
+/privacy/ /trust/privacy.html 200
+/privacy-policy /trust/privacy.html 200
+/privacy-policy/ /trust/privacy.html 200
+/status /trust/status.html 200
+/status/ /trust/status.html 200
+/security /trust/security.html 200
+/security/ /trust/security.html 200
+
+# Legacy/docs routes (redirect to trust center)
+/acceptable-use /trust/ 302
+/acceptable-use/ /trust/ 302
+/docs /trust/ 302
+/docs/ /trust/ 302
+/enterprise /trust/ 302
+/enterprise/ /trust/ 302
+/architecture /trust/ 302
+/architecture/ /trust/ 302
+/deployment /trust/ 302
+/deployment/ /trust/ 302
+/standards /trust/ 302
+/standards/ /trust/ 302
+
+# Cross-app redirects (to other domains)
+/sentinel https://sentinel.cyberqrgai.com/ 302
+/sentinel/ https://sentinel.cyberqrgai.com/ 302
+/privacy https://privacy.cyberqrgai.com/ 302
+/privacy/ https://privacy.cyberqrgai.com/ 302

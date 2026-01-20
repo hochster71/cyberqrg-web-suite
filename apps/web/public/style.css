@@ -1,0 +1,90 @@
+/* CyberQRG Web App - Specific Styles */
+/* App-specific customizations */
+
+/* Custom hero background gradient - more dramatic */
+.hero {
+  background: linear-gradient(135deg, var(--color-bg-primary) 0%, rgba(0, 212, 255, 0.08) 50%, var(--color-bg-secondary) 100%);
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 70% 80%, rgba(255, 107, 107, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Enhanced nav with stronger backdrop */
+.nav {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 212, 255, 0.05) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+/* Custom card hover effects */
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
+}
+
+/* Custom button styles for web app */
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-accent-primary) 0%, #0099cc 100%);
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+  border: 1px solid rgba(0, 212, 255, 0.5);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #00b8e6 0%, #007acc 100%);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Enhanced proof strip */
+.proof-strip {
+  background: linear-gradient(135deg, var(--color-bg-secondary) 0%, rgba(0, 212, 255, 0.08) 50%, var(--color-bg-secondary) 100%);
+  border-top: 1px solid rgba(0, 212, 255, 0.3);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+  position: relative;
+}
+
+.proof-strip::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 30%, rgba(0, 212, 255, 0.05) 0%, transparent 40%),
+              radial-gradient(circle at 80% 70%, rgba(255, 107, 107, 0.03) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+/* Enhanced product demo */
+.product-demo {
+  background: linear-gradient(135deg, var(--color-bg-secondary) 0%, rgba(0, 212, 255, 0.1) 100%);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 212, 255, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .section-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}

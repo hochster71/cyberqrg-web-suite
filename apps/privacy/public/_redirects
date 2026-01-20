@@ -1,0 +1,19 @@
+# CyberQRG Privacy App Redirects
+# Cloudflare Pages _redirects file
+
+# Trust routes redirect to main site trust center
+/trust https://cyberqrgai.com/trust/ 302
+/trust/ https://cyberqrgai.com/trust/ 302
+/terms https://cyberqrgai.com/trust/terms/ 302
+/terms/ https://cyberqrgai.com/trust/terms/ 302
+/privacy https://cyberqrgai.com/trust/privacy/ 302
+/privacy/ https://cyberqrgai.com/trust/privacy/ 302
+/status https://cyberqrgai.com/trust/status/ 302
+/status/ https://cyberqrgai.com/trust/status/ 302
+/security https://cyberqrgai.com/trust/security/ 302
+/security/ https://cyberqrgai.com/trust/security/ 302
+
+# Cross-app redirects
+/ https://cyberqrgai.com/ 302
+/sentinel https://sentinel.cyberqrgai.com/ 302
+/sentinel/ https://sentinel.cyberqrgai.com/ 302

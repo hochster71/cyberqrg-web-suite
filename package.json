@@ -1,0 +1,31 @@
+{
+  "name": "cyberqrg-rebuild",
+  "version": "1.0.0",
+  "description": "CyberQRG production-ready web suite rebuild",
+  "main": "tools/verify.mjs",
+  "scripts": {
+    "verify": "node tools/verify.mjs",
+    "test": "npm run verify",
+    "build": "echo 'Static site - no build required'",
+    "deploy": "echo 'Deploy via Cloudflare Pages'"
+  },
+  "keywords": [
+    "cybersecurity",
+    "web-suite",
+    "static-site",
+    "cloudflare-pages"
+  ],
+  "author": "CyberQRG",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyberqrg/cyberqrg-rebuild"
+  },
+  "bugs": {
+    "url": "https://github.com/cyberqrg/cyberqrg-rebuild/issues"
+  },
+  "homepage": "https://cyberqrgai.com"
+}

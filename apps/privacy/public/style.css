@@ -1,0 +1,59 @@
+/* CyberQRG Privacy App - Specific Styles */
+/* App-specific customizations */
+
+/* Custom hero background gradient - privacy focused, calming */
+.hero {
+  background: linear-gradient(135deg, var(--color-bg-primary) 0%, #001a1a 50%, var(--color-bg-secondary) 100%);
+}
+
+/* Custom accent colors for privacy - green/teal focus */
+.nav-link.active::after {
+  background-color: var(--color-accent-success);
+}
+
+/* Custom card styles */
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-accent-success);
+}
+
+/* Custom button styles */
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-accent-success) 0%, #00aa66 100%);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #00dd77 0%, #009955 100%);
+}
+
+/* Privacy-focused code blocks */
+pre {
+  background-color: #001a1a;
+  border: 1px solid #003333;
+}
+
+pre code {
+  color: #00ff88;
+}
+
+/* Status indicators for privacy compliance */
+.status-indicator.status-online {
+  background-color: rgba(0, 255, 136, 0.1);
+  color: var(--color-accent-success);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .section-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}
