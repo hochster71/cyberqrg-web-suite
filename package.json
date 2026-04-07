@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/cyberqrg/cyberqrg-rebuild/issues"
   },
-  "homepage": "https://cyberqrgai.com"
+  "homepage": "https://cyberqrgai.com",
+  "devDependencies": {
+    "vitest": "^1.6.0",
+    "@vitest/coverage-v8": "^1.6.0"
+  }
 }
