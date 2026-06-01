@@ -28,7 +28,7 @@
   },
   "homepage": "https://cyberqrgai.com",
   "devDependencies": {
-    "vitest": "^1.6.0",
+    "vitest": "^4.1.8",
     "@vitest/coverage-v8": "^1.6.0"
   }
 }
